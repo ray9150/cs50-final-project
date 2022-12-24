@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link href="static/styles.css" rel="stylesheet">
+        <title>Spell checker</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <h1>Simple Spell Checker</h1>
+        <p>Note: this tool only works for words in English, and may not be very accurate.</p>
+
+        <br>
+        <div class="column" id="left">
+            <form action="/" method="post">
+                <textarea name="old_text" rows="10" cols="100" maxlength="1800" placeholder="Paste or type your text here. Maximum 1800 characters.">{{ old_text }}</textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <h3>Correction:</h3>
+            <form>
+                <textarea rows="10" cols="100" placeholder="Edited version will show up here." readonly>{{ new_text }}</textarea>
+            </form>
+        </div>
+
+        <div class="column" id="right">
+            <h3>Stats</h3>
+            <p>Word count: {{w_count}}</p>
+            <p>Character count (original text): {{char_count}}</p>
+            <p>Misspelled words: {{miss_word}}</p>
+        </div>
+
+        <footer>
+            <p><a href="https://www.freepik.com/free-photo/vintage-crumpled-paper-textured-background_15599884.htm#query=parchment%20texture&position=14&from_view=keyword">Image by rawpixel.com</a> on Freepik</p>
+        </footer>
+    </body>
+</html>

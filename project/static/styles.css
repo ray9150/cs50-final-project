@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-image: url("vintage-crumpled-paper-textured-background.jpg");
+    font-family: Verdana, sans-serif;
+    background-size: cover;
+}
+
+.column {
+    float: left;
+}
+
+#left {
+    width: 70%;
+}
+
+#right {
+    width: 30%;
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    color: grey;
+}
